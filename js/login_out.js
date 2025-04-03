@@ -194,10 +194,10 @@ function removeAllBackgroundColor() {
  * reset all icons' color effects in oder to set only for the clicked element
  */
 function resetAllIcons() {
-  document.getElementById('summary-img').setAttribute('src', '../icons/summary.svg');
-  document.getElementById('addTask-img').setAttribute('src', '../icons/addTask.svg');
-  document.getElementById('bord-img').setAttribute('src', '../icons/board.svg');
-  document.getElementById('contact-img').setAttribute('src', '../icons/contact.svg');
+  document.getElementById('summary-img').setAttribute('src', '../assets/icons/summary.svg');
+  document.getElementById('addTask-img').setAttribute('src', '../assets/icons/addTask.svg');
+  document.getElementById('bord-img').setAttribute('src', '../assets/icons/board.svg');
+  document.getElementById('contact-img').setAttribute('src', '../assets/icons/contact.svg');
 }
 
 /**
@@ -305,11 +305,11 @@ const showPassword = function (id) {
 const toggleVisibleIcon = function (id) {
   let element = document.getElementById(id);
   let currentState = element.getAttribute('src');
-  if (currentState === '../icons/visibility_off.svg' || currentState === '../icons/visibility.svg') {
-    if (currentState === '../icons/visibility_off.svg') {
-      element.setAttribute('src', '../icons/visibility.svg');
+  if (currentState === '../assets/icons/visibility_off.svg' || currentState === '../assets/icons/visibility.svg') {
+    if (currentState === '../assets/icons/visibility_off.svg') {
+      element.setAttribute('src', '../assets/icons/visibility.svg');
     } else {
-      element.setAttribute('src', '../icons/visibility_off.svg');
+      element.setAttribute('src', '../assets/icons/visibility_off.svg');
     }
   }
 };
@@ -323,9 +323,9 @@ const handlePwdIcon = function (idInput, idImg) {
   let inputField = document.getElementById(idInput);
   let el = document.getElementById(idImg);
   if (inputField.value !== '') {
-    el.setAttribute('src', '../icons/visibility_off.svg');
+    el.setAttribute('src', '../assets/icons/visibility_off.svg');
   } else {
-    el.setAttribute('src', '../icons/lock.svg');
+    el.setAttribute('src', '../assets/icons/lock.svg');
   }
 };
 

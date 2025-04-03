@@ -470,10 +470,10 @@ function templateContacts() {
     <div class="d-flex">
         <div class="contacts-scroll-container">
             <div class="contacts-overview-container">
-                <button class="add-new-contact" onclick="renderAddContact()">Add new contact<img src="../icons/addNewContact.svg"></button>
+                <button class="add-new-contact" onclick="renderAddContact()">Add new contact<img src="asstes/icons/addNewContact.svg"></button>
                 <div id="contacts-overview"></div>
                 </div>
-                <button class="responsiv-contact-button" onclick="renderAddContact()"><img src="../icons/addNewContact.svg" alt=""></button>
+                <button class="responsiv-contact-button" onclick="renderAddContact()"><img src="asstes/icons/addNewContact.svg" alt=""></button>
             </div>
             <div class="contact-single-view" id="contact-single-view">
                 <div class="contacts-headline">

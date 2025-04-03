@@ -11,8 +11,8 @@ function showContactTemplate(i) {
                   <div class="name-edit-delete">
                       <div id="name-single-view">${name}</div>
                       <div class="edit-and-delete">
-                          <div onclick="editContact(${i})"><img src="../icons/editContact.svg">Edit</div>
-                          <div onclick="deleteContact(${i})"><img src="../icons/delete.svg">Delete</div>
+                          <div onclick="editContact(${i})"><img src="../assets/icons/editContact.svg">Edit</div>
+                          <div onclick="deleteContact(${i})"><img src="../assets/icons/delete.svg">Delete</div>
                       </div>
                   </div>
               </div>
@@ -36,7 +36,7 @@ function showContactTemplate(i) {
                   </span>
               </div>
           </div>
-          <div id="open-menu-contact-responsive"><button class="responsiv-contact-button" onclick="openMenuContactResponsive(${i})"><img src="../icons/three_points.svg" alt=""></button></div>
+          <div id="open-menu-contact-responsive"><button class="responsiv-contact-button" onclick="openMenuContactResponsive(${i})"><img src="../assets/icons/three_points.svg" alt=""></button></div>
           <div id="close-menu-contact-responsive" class="d-none" onclick="closeMenuContactResponsive(${i})"></div>
       `;
   }
@@ -45,8 +45,8 @@ function showContactTemplate(i) {
 function openMenuContactResponsiveTemplate(i){
     return /*html*/`
   <div id="open-menu-contact-responsive-edit-delete">
-    <div onclick="editContact(${i})"><img src="../icons/editContact.svg">Edit</div>
-    <div onclick="deleteContact(${i}, true)"><img src="../icons/delete.svg">Delete</div>
+    <div onclick="editContact(${i})"><img src="../assets/icons/editContact.svg">Edit</div>
+    <div onclick="deleteContact(${i}, true)"><img src="../assets/icons/delete.svg">Delete</div>
   </div>
 `
 }
@@ -56,7 +56,7 @@ function closeMenuContactResponsiveTemplate(i){
     return /*html*/`
         <div id="open-menu-contact-responsive">
             <button class="responsiv-contact-button" onclick="openMenuContactResponsive(${i})">
-                <img src="../icons/three_points.svg" alt="">
+                <img src="../assets/icons/three_points.svg" alt="">
             </button>
         </div>
     `
@@ -102,27 +102,27 @@ function addAndEditTemplate() {
     <div id="fly-in-container" class="">
       <div id="add-contact">
           <div class="add-contact-slogan">
-              <img src="../icons/logo.svg" alt="logo">
+              <img src="../assets/icons/logo.svg" alt="logo">
               <h2 id="headline-add-edit"></h2>
               <p id="subheadline-add-edit"></p>
               <div class="border-add-edit"></div>
           </div>
           <div class="add-contact-data">
             <div class="profile-icon-container" id="profile-icon-container">
-              <img src="../icons/profileImageContacts.svg" alt="profile icon">
+              <img src="../assets/icons/profileImageContacts.svg" alt="profile icon">
             </div>
                 <form class="add-contact-data-inputs"  onsubmit="createContact()" action="#">
                   <div class="d-flex add-contact-input-container">
                     <input type="text" minlength="2"  placeholder="Name" class="add-contact-input" id="name-input" required>
-                    <img src="../icons/name.svg" alt="telephone-icon">
+                    <img src="../assets/icons/name.svg" alt="telephone-icon">
                   </div>
                   <div class="d-flex add-contact-input-container">
                     <input type="email" placeholder="Email" class="add-contact-input" id="email-input" required>
-                    <img src="../icons/email.svg" alt="telephone-icon">
+                    <img src="../assets/icons/email.svg" alt="telephone-icon">
                   </div>
                   <div class="d-flex add-contact-input-container">
                       <input type="number" minlength="4" placeholder="Phone" class="add-contact-input" id="telephone-input" required>
-                      <img src="../icons/telephone.svg" alt="telephone-icon">
+                      <img src="../assets/icons/telephone.svg" alt="telephone-icon">
                   </div>
                   <div class="buttons-create-contact d-flex">
                     <button type="button" class="cancel-contact-button" onclick="closeAddContact()">Cancel</button>
@@ -146,7 +146,7 @@ function addAndEditTemplate() {
             <div class="border-responsive-single"></div>
           </div>
           <img 
-            src="../icons/arrow-left-line.svg" 
+            src="../assets/icons/arrow-left-line.svg" 
             class="arrow-back-contacts d-none" 
             alt="back" 
             onclick="closeContactResponsiv(${jsonIndex});">

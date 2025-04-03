@@ -24,7 +24,7 @@ function todowindowtemplate(i) {
       <div class="overlay">
           <div class="overlaybutton">
               <button id="category">${tasks[i].category}</button>
-              <img src="../icons/close.svg" alt="" onclick="closetodowindow()">
+              <img src="../assets/icons/close.svg" alt="" onclick="closetodowindow()">
           </div>
           <h1>${tasks[i].title}</h1>
           <span class="overlaydiscription">${tasks[i].discription}</span>
@@ -49,12 +49,12 @@ function todowindowtemplate(i) {
           </div>
           <div class="overlaychange">
               <div onclick="deletetask(${i})" class="overlaydelete">
-                  <img src="../icons/delete.svg" alt="">
+                  <img src="../assets/icons/delete.svg" alt="">
                   <span>Delete</span>
               </div>
               <span>|</span>
               <div class="overlayedit" onclick="edittask(${i})">
-                  <img src="../icons/editcontact.svg" alt="">
+                  <img src="../assets/icons/editcontact.svg" alt="">
                   <span>Edit</span>
               </div>
           </div>
@@ -93,7 +93,7 @@ function templateOpenaddtask() {
                               <span class="containerLeftSpan">Assigned to</span>
                               <div id="dropdown" class="dropdown" onclick="handleDropdownClick(this)">Select contacts to assign</div>
                                 <div class="test6" onclick="handleDropdownClick(this)">
-                                  <img class="dropDownImg" src="../img/img/arrow_drop_down.svg" alt="">
+                                  <img class="dropDownImg" src="../assets/icons/arrow_drop_down.svg" alt="">
                                 </div>
                               <div id="options" class="options d-none"></div>
                                 <div id="btn-grp" class="btn"></div>
@@ -110,9 +110,9 @@ function templateOpenaddtask() {
                           <div class="addTaskOverview">
                               <span class="containerLeftSpan">Prio</span>
                               <div id="prio" class="prioSelection">
-                                  <img id="colorUrgentImg" onclick="prio('urgent'); changeColorPrio('colorUrgentImg','colorLowImg', 'colorMediumImg','../img/img/urgent.svg', '../img/img/urgent-white.svg','../img/img/low.svg','../img/img/medium.svg')" class="prio prioUrgentIMG testPrio" src="../img/img/urgent.svg" alt="">
-                                  <img id="colorMediumImg" onclick="prio('medium'); changeColorPrio('colorMediumImg','colorUrgentImg','colorLowImg', '../img/img/medium-yellow.svg', '../img/img/medium.svg','../img/img/urgent.svg','../img/img/low.svg')" class="prio prioMediumIMG testPrio" src="../img/img/medium-yellow.svg" alt="">
-                                  <img id="colorLowImg" onclick="prio('low'); changeColorPrio('colorLowImg','colorMediumImg','colorUrgentImg', '../img/img/low.svg', '../img/img/low-green.svg','../img/img/medium.svg','../img/img/urgent.svg')" class="prio prioLowIMG testPrio" src="../img/img/low.svg" alt="">
+                                  <img id="colorUrgentImg" onclick="prio('urgent'); changeColorPrio('colorUrgentImg','colorLowImg', 'colorMediumImg','../assets/icons/urgent.svg', '../assets/icons/urgent-white.svg','../assets/icons/low.svg','../assets/icons/medium.svg')" class="prio prioUrgentIMG testPrio" src="../assets/icons/urgent.svg" alt="">
+                                  <img id="colorMediumImg" onclick="prio('medium'); changeColorPrio('colorMediumImg','colorUrgentImg','colorLowImg', '../assets/icons/medium-yellow.svg', '../assets/icons/medium.svg','../assets/icons/urgent.svg','../assets/icons/low.svg')" class="prio prioMediumIMG testPrio" src="../assets/icons/medium-yellow.svg" alt="">
+                                  <img id="colorLowImg" onclick="prio('low'); changeColorPrio('colorLowImg','colorMediumImg','colorUrgentImg', '../assets/icons/low.svg', '../assets/icons/low-green.svg','../assets/icons/medium.svg','../assets/icons/urgent.svg')" class="prio prioLowIMG testPrio" src="../assets/icons/low.svg" alt="">
                               </div>
                           </div>
                           <div class="categoryAddTask addTaskOverview">
@@ -127,10 +127,10 @@ function templateOpenaddtask() {
                               <div class="test_test">
                                 <input type="text" onclick="changeBorderColor(this)" id="subtasks" class="inputAddTaskSubtask" type="text" placeholder="Add new subtask">
                                 <button type="button" class="buttonSubtask" id="buttonSubtask" >
-                                <img onclick="addNewSubtask(); changeSubtaskImg()" id="subtasksPlusIMG" class="subtasksPlusIMG" src="../img/img/subtasksPlus.svg" alt="">
+                                <img onclick="addNewSubtask(); changeSubtaskImg()" id="subtasksPlusIMG" class="subtasksPlusIMG" src="../assets/icons/subtasksPlus.svg" alt="">
                               </button>
                                 <button type="button" class="buttonSubtask" id="buttonSubtask" >
-                                <img onclick="deleteSubtaskInput()" id="subtasksCancelIMG" class="subtasksCancelIMG" src="../img/img/subtasks_cancel.svg" alt=""> 
+                                <img onclick="deleteSubtaskInput()" id="subtasksCancelIMG" class="subtasksCancelIMG" src="../assets/icons/subtasks_cancel.svg" alt=""> 
                               </button>
                               </div>                      
                               <ul id="subtasksList"></ul>
@@ -151,7 +151,7 @@ function templateOpenaddtask() {
                                   </div>
                                   <button id="createTaskButton" class="createTaskButton">
                                       <span>Create Task</span>
-                                      <img class="imgCheck" src="../img/img/check.svg" alt="">
+                                      <img class="imgCheck" src="../assets/icons/check.svg" alt="">
                                   </button>
                               </div>
                           </div>
@@ -168,7 +168,7 @@ function edittasktemplate(i) {
     return /*html*/ `
               <div class="addTaskOverviewContainer editTaskContainer">
                 <div class="closeEditContainer">
-                  <img class="closeEdit" src="../icons/close.svg" alt="" onclick="closetodowindow()">
+                  <img class="closeEdit" src="../assets/icons/close.svg" alt="" onclick="closetodowindow()">
                 </div>
               
           <div class="addTaskContainerLeftRight">
@@ -191,7 +191,7 @@ function edittasktemplate(i) {
                               <span class="containerLeftSpan">Assigned to</span>
                               <div id="dropdown" class="dropdown" onclick="handleDropdownClick(this)">Select contacts to assign</div>
                                 <div class="test6" onclick="handleDropdownClick(this)">
-                                  <img class="dropDownImg" src="../img/img/arrow_drop_down.svg" alt="">
+                                  <img class="dropDownImg" src="../assets/icons/arrow_drop_down.svg" alt="">
                                 </div>
                               <div id="options" class="options d-none"></div>
                                 <div id="btn-grp" class="btn btnEditTask"></div>
@@ -208,9 +208,9 @@ function edittasktemplate(i) {
                           <div class="addTaskOverview">
                               <span class="containerLeftSpan">Prio</span>
                               <div id="prio" class="prioSelection">
-                                  <img id="colorUrgentImg" onclick="prio('urgent'); changeColorPrio('colorUrgentImg','colorLowImg', 'colorMediumImg','../img/img/urgent.svg', '../img/img/urgent-white.svg','../img/img/low.svg','../img/img/medium.svg')" class="prio prioUrgentIMG testPrio" src="../img/img/urgent.svg" alt="">
-                                  <img id="colorMediumImg" onclick="prio('medium'); changeColorPrio('colorMediumImg','colorUrgentImg','colorLowImg', '../img/img/medium-yellow.svg', '../img/img/medium.svg','../img/img/urgent.svg','../img/img/low.svg')" class="prio prioMediumIMG testPrio" src="../img/img/medium-yellow.svg" alt="">
-                                  <img id="colorLowImg" onclick="prio('low'); changeColorPrio('colorLowImg','colorMediumImg','colorUrgentImg', '../img/img/low.svg', '../img/img/low-green.svg','../img/img/medium.svg','../img/img/urgent.svg')" class="prio prioLowIMG testPrio" src="../img/img/low.svg" alt="">
+                                  <img id="colorUrgentImg" onclick="prio('urgent'); changeColorPrio('colorUrgentImg','colorLowImg', 'colorMediumImg','../assets/icons/urgent.svg', '../assets/icons/urgent-white.svg','../assets/icons/low.svg','../assets/icons/medium.svg')" class="prio prioUrgentIMG testPrio" src="../assets/icons/urgent.svg" alt="">
+                                  <img id="colorMediumImg" onclick="prio('medium'); changeColorPrio('colorMediumImg','colorUrgentImg','colorLowImg', '../assets/icons/medium-yellow.svg', '../assets/icons/medium.svg','../assets/icons/urgent.svg','../assets/icons/low.svg')" class="prio prioMediumIMG testPrio" src="../assets/icons/medium-yellow.svg" alt="">
+                                  <img id="colorLowImg" onclick="prio('low'); changeColorPrio('colorLowImg','colorMediumImg','colorUrgentImg', '../assets/icons/low.svg', '../assets/icons/low-green.svg','../assets/icons/medium.svg','../assets/icons/urgent.svg')" class="prio prioLowIMG testPrio" src="../assets/icons/low.svg" alt="">
                               </div>
                           </div>
                           <div class="categoryAddTask addTaskOverview">
@@ -225,10 +225,10 @@ function edittasktemplate(i) {
                               <div class="test_test">
                                 <input type="text" onclick="changeBorderColor(this)" id="subtasks" class="inputAddTaskSubtask" type="text" placeholder="Add new subtask">
                                 <button type="button" class="buttonSubtask" id="buttonSubtask" >
-                                <img onclick="addNewSubtask(); changeSubtaskImg()" id="subtasksPlusIMG" class="subtasksPlusIMG" src="../img/img/subtasksPlus.svg" alt="">
+                                <img onclick="addNewSubtask(); changeSubtaskImg()" id="subtasksPlusIMG" class="subtasksPlusIMG" src="../assets/icons/subtasksPlus.svg" alt="">
                               </button>
                                 <button type="button" class="buttonSubtask" id="buttonSubtask" >
-                                <img onclick="deleteSubtaskInput()" id="subtasksCancelIMG" class="subtasksCancelIMG" src="../img/img/subtasks_cancel.svg" alt=""> 
+                                <img onclick="deleteSubtaskInput()" id="subtasksCancelIMG" class="subtasksCancelIMG" src="../assets/icons/subtasks_cancel.svg" alt=""> 
                               </button>
                               </div>                      
                               <ul id="subtasksList"></ul>
@@ -246,7 +246,7 @@ function edittasktemplate(i) {
                               <div class="footerAddTaskButtons">
                                   <button onclick="saveEditTask(${i})" id="createTaskButton" class="createTaskButton createTaskButtonEditTask">
                                       <span>OK</span>
-                                      <img class="imgCheck" src="../img/img/check.svg" alt="">
+                                      <img class="imgCheck" src="../assets/icons/check.svg" alt="">
                                   </button>
                               </div>
                           </div>

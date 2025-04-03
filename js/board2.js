@@ -118,7 +118,7 @@ async function edittask(i) {
   
         if (elements.includes(option)) {
           showOptions(`cont${i}`, 'newColor');
-          document.getElementById(`checkBox${i}`).src = '../img/img/Check_button-white.svg';
+          document.getElementById(`checkBox${i}`).src = '../assets/icons/Check_button-white.svg';
         }
       
     }
@@ -130,13 +130,13 @@ async function edittask(i) {
   */
   function checkprio(i) {
     if (tasks[i].prio.includes('urgent')) {
-      changeColorPrio('colorUrgentImg', 'colorLowImg', 'colorMediumImg', '../img/img/urgent.svg', '../img/img/urgent-white.svg', '../img/img/low.svg', '../img/img/medium.svg')
+      changeColorPrio('colorUrgentImg', 'colorLowImg', 'colorMediumImg', '../assets/icons/urgent.svg', '../assets/icons/urgent.svg', '../assets/icons/low.svg', '../assets/icons/medium.svg')
     }
     if (tasks[i].prio.includes('medium')) {
-      changeColorPrio('colorMediumImg', 'colorUrgentImg', 'colorLowImg', '../img/img/medium-yellow.svg', '../img/img/medium.svg', '../img/img/urgent.svg', '../img/img/low.svg')
+      changeColorPrio('colorMediumImg', 'colorUrgentImg', 'colorLowImg', '../assets/icons/medium-yellow.svg', '../assets/icons/medium.svg', '../assets/icons/urgent.svg', '../assets/icons/low.svg')
     }
     if (tasks[i].prio.includes('low')) {
-      changeColorPrio('colorLowImg', 'colorMediumImg', 'colorUrgentImg', '../img/img/low.svg', '../img/img/low-green.svg', '../img/img/medium.svg', '../img/img/urgent.svg')
+      changeColorPrio('colorLowImg', 'colorMediumImg', 'colorUrgentImg', '../assets/icons/low.svg', '../assets/icons/low-green.svg', '../assets/icons/medium.svg', '../assets/icons/urgent.svg')
     }
   }
   

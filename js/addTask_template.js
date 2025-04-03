@@ -4,18 +4,18 @@ function renderSubtaskHTMLTemplate(i, subtask) {
         <div class="newSubtaskContainerTwo" id="list${i}">
           <li id="link-${i}">${subtask}</li>
             <div class="hoverSubtask">
-              <img class="subtaskNewContainerImgs" id="edit-${i}" onclick="editSubtask(${i})" src="../img/img/penSubtasks.svg" alt="">
-              <img class="subtaskNewContainerImgs"  onclick="deleteSubtask(${i})" src="../img/img/deleteSubtasks.svg" alt="">
+              <img class="subtaskNewContainerImgs" id="edit-${i}" onclick="editSubtask(${i})" src="../assets/icons/penSubtasks.svg" alt="">
+              <img class="subtaskNewContainerImgs"  onclick="deleteSubtask(${i})" src="../assets/icons/deleteSubtasks.svg" alt="">
             </div>
         </div>
         <div id="test_test${i}" class="test_test editContainerSubtask d-none">
           <input type="text" onclick="changeBorderColor(this)" id="input-edit-${i}" class="inputEdit" type="text" placeholder="Add new subtask">
           <button type="button" class="buttonSubtask">
-          <img onclick="changeSubtaskImg(); deleteSubtask()"  class="subtasksPlusIMGNew" src="../img/img/deleteSubtasks.svg" alt="">
+          <img onclick="changeSubtaskImg(); deleteSubtask()"  class="subtasksPlusIMGNew" src="../assets/icons/deleteSubtasks.svg" alt="">
         </button>
           <button type="button" class="buttonSubtask">
             <div class="newSubtaskImgs">
-          <img id="newSubtaskImgsHover" class="newSubtaskImgsHover" onclick="checkNewSubtaskEdit(${i})"   src="../img/img/subtasks_check.svg" alt=""> 
+          <img id="newSubtaskImgsHover" class="newSubtaskImgsHover" onclick="checkNewSubtaskEdit(${i})"   src="../assets/icons/subtasks_check.svg" alt=""> 
           </div>
         </button>
         </div>
@@ -33,7 +33,7 @@ function optionsHTMLTemplate(i, option, initial, color) {
         </div>
           <div class="test4">
             <div class="test5">
-              <img id="checkBox${i}" src="../img/img/checkBox.svg" alt="">
+              <img id="checkBox${i}" src="../assets/icons/checkBox.svg" alt="">
             </div>
           </div>
         </div>

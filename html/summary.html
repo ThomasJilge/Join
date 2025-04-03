@@ -30,26 +30,26 @@
     <div class="container-summary disp-flex">
       <div class="left-side-section disp-flex">
         <div class="section-1">
-          <img class="logo-summary" src="../icons/logo.svg" alt="Logo" />
+          <img class="logo-summary" src="../assets/icons/logo.svg" alt="Logo" />
         </div>
         <div class="section-2">
-          <div id="first-bg" class="sub-menu-container disp-flex bg-summary" onclick="userAction('summary');toggleButtonColor('first-bg','summary-text','summary-img','../icons/summary_white.svg') ">
-            <img id="summary-img" class="icons-left-side-section cursor-ptr" src="../icons/summary_white.svg" alt="Summary" />
+          <div id="first-bg" class="sub-menu-container disp-flex bg-summary" onclick="userAction('summary');toggleButtonColor('first-bg','summary-text','summary-img','../assets/icons/summary_white.svg') ">
+            <img id="summary-img" class="icons-left-side-section cursor-ptr" src="../assets/icons/summary_white.svg" alt="Summary" />
             <p id="summary-text" class="para-summary gray-text ft-sz-400 clr-white cursor-ptr">Summary</p>
           </div>
 
-          <div id="second-bg" class="sub-menu-container disp-flex" onclick="render(templateAddTask()); clearTask();  initialize(); toggleButtonColor('second-bg','addTask-text','addTask-img','../icons/addTask-white.svg')">
-            <img id="addTask-img" class="icons-left-side-section cursor-ptr" src="../icons/addTask.svg" alt="Task" />
+          <div id="second-bg" class="sub-menu-container disp-flex" onclick="render(templateAddTask()); clearTask();  initialize(); toggleButtonColor('second-bg','addTask-text','addTask-img','../assets/icons/addTask-white.svg')">
+            <img id="addTask-img" class="icons-left-side-section cursor-ptr" src="../assets/icons/addTask.svg" alt="Task" />
             <p id="addTask-text" class="para-summary gray-text ft-sz-400 cursor-ptr">Add Task</p>
           </div>
 
-          <div id="third-bg" class="sub-menu-container disp-flex" onclick="render(templateBoard()); sliderScroll();toggleButtonColor('third-bg','bord-text','bord-img','../icons/board-white.svg'); renderToDos()">
-            <img id="bord-img" class="icons-left-side-section cursor-ptr" src="../icons/board.svg" alt="Board" />
+          <div id="third-bg" class="sub-menu-container disp-flex" onclick="render(templateBoard()); sliderScroll();toggleButtonColor('third-bg','bord-text','bord-img','../assets/icons/board-white.svg'); renderToDos()">
+            <img id="bord-img" class="icons-left-side-section cursor-ptr" src="../assets/icons/board.svg" alt="Board" />
             <p id="bord-text" class="para-summary gray-text ft-sz-400 cursor-ptr">Board</p>
           </div>
 
-          <div id="fourth-bg" class="sub-menu-container disp-flex" onclick="render(templateContacts()); renderContactSection() ; toggleButtonColor('fourth-bg','contact-text','contact-img','../icons/contact-white.svg')">
-            <img id="contact-img" class="icons-left-side-section cursor-ptr" src="../icons/contact.svg" alt="Contacts" />
+          <div id="fourth-bg" class="sub-menu-container disp-flex" onclick="render(templateContacts()); renderContactSection() ; toggleButtonColor('fourth-bg','contact-text','contact-img','../assets/icons/contact-white.svg')">
+            <img id="contact-img" class="icons-left-side-section cursor-ptr" src="../assets/icons/contact.svg" alt="Contacts" />
             <p id="contact-text" class="para-summary gray-text ft-sz-400 cursor-ptr">Contacts</p>
           </div>
         </div>
@@ -60,10 +60,10 @@
       </div>
       <div class="right-side-section" id="right-side-section">
         <header class="menu disp-flex">
-          <img class="mobile-logo" src="../icons/logo_blue.svg" alt="Logo" />
+          <img class="mobile-logo" src="../assets/icons/logo_blue.svg" alt="Logo" />
           <div class="kanban-tool ft-sz-400">Kanban Project Management Tool</div>
           <div class="menu-icons-group disp-flex">
-            <img id="help-icon" class="help" src="../icons/help.svg" alt="Help" onclick="render(templateHelp())" />
+            <img id="help-icon" class="help" src="../assets/icons/help.svg" alt="Help" onclick="render(templateHelp())" />
             <button id="loginBtn" class="login" onclick="showSubmenu()"></button>
           </div>
         </header>
@@ -89,24 +89,24 @@
                   <span id="current-user-name-responsive" class="current-user-name"></span>
                 </div>
                 <div class="first-line-task disp-flex">
-                  <div class="todo do-task disp-flex" onclick="render(templateBoard());toggleButtonColor('third-bg','bord-text','bord-img','../icons/board-white.svg'); renderToDos()">
-                    <img class="task-icons-blue" src="../icons/edit.svg" alt="TO-DO" />
+                  <div class="todo do-task disp-flex" onclick="render(templateBoard());toggleButtonColor('third-bg','bord-text','bord-img','../assets/icons/board-white.svg'); renderToDos()">
+                    <img class="task-icons-blue" src="../assets/icons/edit.svg" alt="TO-DO" />
                     <div class="middle">
                       <span id="todoID" class="var-task">0</span>
                       <span class="task-text ft-sz-400">To-do</span>
                     </div>
                   </div>
-                  <div class="done do-task disp-flex" onclick="render(templateBoard());toggleButtonColor('third-bg','bord-text','bord-img','../icons/board-white.svg'); renderToDos()">
-                    <img class="task-icons-blue" src="../icons/check.svg" alt="TO-DO" />
+                  <div class="done do-task disp-flex" onclick="render(templateBoard());toggleButtonColor('third-bg','bord-text','bord-img','../assets/icons/board-white.svg'); renderToDos()">
+                    <img class="task-icons-blue" src="../assets/icons/check.svg" alt="TO-DO" />
                     <div class="middle">
                       <span id="doneID" class="var-task">0</span>
                       <span class="task-text ft-sz-400">Done</span>
                     </div>
                   </div>
                 </div>
-                <div class="second-line-task disp-flex" onclick="render(templateBoard());toggleButtonColor('third-bg','bord-text','bord-img','../icons/board-white.svg'); renderToDos()">
+                <div class="second-line-task disp-flex" onclick="render(templateBoard());toggleButtonColor('third-bg','bord-text','bord-img','../assets/icons/board-white.svg'); renderToDos()">
                   <div class="urgent disp-flex task-due-common">
-                    <img class="task-icons" src="../icons/urgent.svg" alt="Urgent" />
+                    <img class="task-icons" src="../assets/icons/urgent.svg" alt="Urgent" />
                     <div class="middle">
                       <span id="urgentID" class="var-task">0</span>
                       <span class="task-text ft-sz-400">Urgent</span>
@@ -119,17 +119,17 @@
                   </div>
                 </div>
                 <div class="third-line-task disp-flex">
-                  <div class="boar-progress-feedback disp-flex" onclick="render(templateBoard());toggleButtonColor('third-bg','bord-text','bord-img','../icons/board-white.svg'); renderToDos()">
+                  <div class="boar-progress-feedback disp-flex" onclick="render(templateBoard());toggleButtonColor('third-bg','bord-text','bord-img','../assets/icons/board-white.svg'); renderToDos()">
                     <span id="board-task-number" class="var-task">0</span
                     ><span class="task-text ft-sz-400">Tasks In</span>
                     <span class="task-text ft-sz-400">Board</span>
                   </div>
-                  <div class="boar-progress-feedback disp-flex" onclick="render(templateBoard());toggleButtonColor('third-bg','bord-text','bord-img','../icons/board-white.svg'); renderToDos()">
+                  <div class="boar-progress-feedback disp-flex" onclick="render(templateBoard());toggleButtonColor('third-bg','bord-text','bord-img','../assets/icons/board-white.svg'); renderToDos()">
                     <span id="progress-task-number" class="var-task">0</span
                     ><span class="task-text ft-sz-400">Tasks In</span>
                     <span class="task-text ft-sz-400">Progress</span>
                   </div>
-                  <div class="boar-progress-feedback disp-flex" onclick="render(templateBoard());toggleButtonColor('third-bg','bord-text','bord-img','../icons/board-white.svg'); renderToDos()">
+                  <div class="boar-progress-feedback disp-flex" onclick="render(templateBoard());toggleButtonColor('third-bg','bord-text','bord-img','../assets/icons/board-white.svg'); renderToDos()">
                     <span id="feedback-task-number" class="var-task">0</span
                     ><span class="task-text ft-sz-400">Awaiting</span>
                     <span class="task-text ft-sz-400">Feedback</span>

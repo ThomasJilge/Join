@@ -20,10 +20,10 @@
     <title>Signup</title>
   </head>
   <body class="login-body disp-flex" onload="init();initLocalStorage()">
-    <img class="login-logo" src="../icons/logo_blue.svg" alt="Logo" />
+    <img class="login-logo" src="../assets/icons/logo_blue.svg" alt="Logo" />
     <div class="container-login">
       <form class="user-log-data-section-signup disp-flex" onsubmit="registerUser();return false">
-        <img class="exit-arrow" src="../icons/arrow-left-line.svg" alt="Exit" onclick="userAction('login')" />
+        <img class="exit-arrow" src="../assets/icons/arrow-left-line.svg" alt="Exit" onclick="userAction('login')" />
         <div class="title-join-underline disp-flex">
           <div class="log-title">Sign up</div>
           <div class="btm-bar"></div>
@@ -41,7 +41,7 @@
                   required
                 />
                 <button type="button" class="icon-btn-login mail-btn-pointer-pos">
-                  <img class="mail-icon-login" src="../icons/person.svg" alt="Email" />
+                  <img class="mail-icon-login" src="../assets/icons/person.svg" alt="Email" />
                 </button>
               </div>
               <!-- <p id="emailExist"></p> -->
@@ -56,7 +56,7 @@
                   required
                 />
                 <button type="button" class="icon-btn-login mail-btn-pointer-pos">
-                  <img class="mail-icon-login" src="../icons/mail.svg" alt="Email" />
+                  <img class="mail-icon-login" src="../assets/icons/mail.svg" alt="Email" />
                 </button>
               </div>
               <p id="emailExist"></p>
@@ -74,7 +74,7 @@
                   oninput="handlePwdIcon('pwd','pwd-img-signup')"
                 />
                 <button type="button" class="icon-btn-login pwd-btn-pos" onclick="showPassword('pwd');toggleVisibleIcon('pwd-img-signup')">
-                  <img id="pwd-img-signup" src="../icons/lock.svg" alt="Password" />
+                  <img id="pwd-img-signup" src="../assets/icons/lock.svg" alt="Password" />
                 </button>
               </div>
               <!-- <p id="passwordError"></p> -->
@@ -91,7 +91,7 @@
                   oninput="handlePwdIcon('confirm-pwd','conf-pwd-img')"
                 />
                 <button type="button" class="icon-btn-login pwd-btn-pos" onclick="showPassword('confirm-pwd');toggleVisibleIcon('conf-pwd-img')">
-                  <img id="conf-pwd-img" src="../icons/lock.svg" alt="Password" />
+                  <img id="conf-pwd-img" src="../assets/icons/lock.svg" alt="Password" />
                 </button>
               </div>
               <p id="confirmPwdError"></p>
@@ -101,9 +101,9 @@
             <div class="remember-me disp-flex">
               <img
               id="checkbox-sign-up"
-              src="../icons/checkBox.svg"
+              src="../assets/icons/checkBox.svg"
               alt="Check"
-              onclick="checkButton('checkbox-sign-up','../icons/checkBox.svg','../icons/check-checked.svg'); enableSignUP()"
+              onclick="checkButton('checkbox-sign-up','assets/icons/checkBox.svg','assets/icons/check-checked.svg'); enableSignUP()"
             />
             <span class="remember ft-sz-400">I accepted the </span
             ><a class="consent-policy" onclick="userAction('privacy_signup')">Privacy Policy</a>

@@ -31,7 +31,7 @@ function templateAddTask() {
                             <span class="containerLeftSpan">Assigned to</span>
                             <div id="dropdown" class="dropdown" onclick="handleDropdownClick(this)">Select contacts to assign</div>
                               <div class="test6" onclick="handleDropdownClick(this)">
-                                <img class="dropDownImg" src="../img/img/arrow_drop_down.svg" alt="">
+                                <img class="dropDownImg" src="../assets/icons/arrow_drop_down.svg" alt="">
                               </div>
                             <div id="options" class="options d-none"></div>
                               <div id="btn-grp" class="btn"></div>
@@ -48,9 +48,9 @@ function templateAddTask() {
                         <div class="addTaskOverview">
                             <span class="containerLeftSpan">Prio</span>
                             <div id="prio" class="prioSelection">
-                                <img id="colorUrgentImg" onclick="prio('urgent'); changeColorPrio('colorUrgentImg','colorLowImg', 'colorMediumImg','../img/img/urgent.svg', '../img/img/urgent-white.svg','../img/img/low.svg','../img/img/medium.svg')" class="prio prioUrgentIMG testPrio" src="../img/img/urgent.svg" alt="">
-                                <img id="colorMediumImg" onclick="prio('medium'); changeColorPrio('colorMediumImg','colorUrgentImg','colorLowImg', '../img/img/medium-yellow.svg', '../img/img/medium.svg','../img/img/urgent.svg','../img/img/low.svg')" class="prio prioMediumIMG testPrio" src="../img/img/medium-yellow.svg" alt="">
-                                <img id="colorLowImg" onclick="prio('low'); changeColorPrio('colorLowImg','colorMediumImg','colorUrgentImg', '../img/img/low.svg', '../img/img/low-green.svg','../img/img/medium.svg','../img/img/urgent.svg')" class="prio prioLowIMG testPrio" src="../img/img/low.svg" alt="">
+                                <img id="colorUrgentImg" onclick="prio('urgent'); changeColorPrio('colorUrgentImg','colorLowImg', 'colorMediumImg','../assets/icons/urgent1.svg', '../assets/icons/urgent-white.svg','../assets/icons/low.svg','../assets/icons/medium.svg')" class="prio prioUrgentIMG testPrio" src="../assets/icons/urgent1.svg" alt="">
+                                <img id="colorMediumImg" onclick="prio('medium'); changeColorPrio('colorMediumImg','colorUrgentImg','colorLowImg', '../assets/icons/medium-yellow.svg', '../assets/icons/medium.svg','../assets/icons/urgent1.svg','../assets/icons/low.svg')" class="prio prioMediumIMG testPrio" src="../assets/icons/medium-yellow.svg" alt="">
+                                <img id="colorLowImg" onclick="prio('low'); changeColorPrio('colorLowImg','colorMediumImg','colorUrgentImg', '../assets/icons/low.svg', '../assets/icons/low-green.svg','../assets/icons/medium.svg','../assets/icons/urgent1.svg')" class="prio prioLowIMG testPrio" src="../assets/icons/low.svg" alt="">
                             </div>
                         </div>
                         <div class="categoryAddTask addTaskOverview">
@@ -65,10 +65,10 @@ function templateAddTask() {
                             <div class="test_test">
                               <input type="text" onclick="changeBorderColor(this)" id="subtasks" class="inputAddTaskSubtask" type="text" placeholder="Add new subtask">
                               <button type="button" class="buttonSubtask" id="buttonSubtask" >
-                              <img onclick="addNewSubtask(); changeSubtaskImg()" id="subtasksPlusIMG" class="subtasksPlusIMG" src="../img/img/subtasksPlus.svg" alt="">
+                              <img onclick="addNewSubtask(); changeSubtaskImg()" id="subtasksPlusIMG" class="subtasksPlusIMG" src="../assets/icons/subtasksPlus.svg" alt="">
                             </button>
                               <button type="button" class="buttonSubtask" id="buttonSubtask" >
-                              <img onclick="deleteSubtaskInput()" id="subtasksCancelIMG" class="subtasksCancelIMG" src="../img/img/subtasks_cancel.svg" alt=""> 
+                              <img onclick="deleteSubtaskInput()" id="subtasksCancelIMG" class="subtasksCancelIMG" src="../assets/icons/subtasks_cancel.svg" alt=""> 
                             </button>
                             </div>
                             <ul id="subtasksList"></ul>
@@ -89,7 +89,7 @@ function templateAddTask() {
                                   </div>
                                 <button id="createTaskButton" class="createTaskButton">
                                     <span>Create Task</span>
-                                    <img class="imgCheck" src="../img/img/check.svg" alt="">
+                                    <img class="imgCheck" src="../assets/icons/check.svg" alt="">
                                 </button>
                             </div>
                         </div>
@@ -102,7 +102,7 @@ function templateAddTask() {
             <span id="privacy-page" class="virtualClass help-page">
               <div class="title-help">Privacy Policy</div>
               <a href="../html/summary.html"
-                ><img id="return-btn" class="return-btn" src="../icons/arrow-left-line.svg" alt="Exit"
+                ><img id="return-btn" class="return-btn" src="../assets/icons/arrow-left-line.svg" alt="Exit"
               /></a>
               <div class="qa-join">Subtitle</div>
               <div class="help-text">
@@ -122,7 +122,7 @@ function templateAddTask() {
             <span id="legal-notice-page" class="virtualClass help-page">
               <div class="title-help">Legal Notice</div>
               <a href="../html/summary.html"
-                ><img id="return-btn" class="return-btn" src="../icons/arrow-left-line.svg" alt="Exit"
+                ><img id="return-btn" class="return-btn" src="../assets/icons/arrow-left-line.svg" alt="Exit"
               /></a>
               <span class="qa-join">Imprint</span>
               <div class="help-text">
@@ -225,7 +225,7 @@ function templateAddTask() {
             <span id="help-page" class="help-page">
               <div class="title-help">Help</div>
               <a href="../html/summary.html"
-                ><img id="return-btn" class="return-btn" src="../icons/arrow-left-line.svg" alt="Exit"
+                ><img id="return-btn" class="return-btn" src="../assets/icons/arrow-left-line.svg" alt="Exit"
               /></a>
               <div class="help-text">
                 Welcome to the help page for <span class="blue-join">Join</span>, your guide to using our kanban project
@@ -335,11 +335,11 @@ function templateBoard() {
             <div class="hiddenheadline">
               <div class="headlineAndAddTask">
                 <h1>Board</h1>
-                <button onclick="openAddtask()"><img src="../icons/add.svg" alt=""></button>
+                <button onclick="openAddtask()"><img src="../assets/icons/add.svg" alt=""></button>
               </div>
               <div class="searchtaskhidden">
                 <input id="taskInputhidden" type="" placeholder="Find Task" oninput="filterTodosByTitle('taskInputhidden')">
-                <button><img src="../icons/search.svg" alt=""></button> 
+                <button><img src="../assets/icons/search.svg" alt=""></button> 
               </div>
             </div>
             <div class="headline">
@@ -347,9 +347,9 @@ function templateBoard() {
                 <div class="addandsearch">
                     <div class="searchtask">
                         <input id="taskInput" type="" placeholder="Find Task" oninput="filterTodosByTitle('taskInput')">
-                        <img src="../icons/search.svg" alt="">
+                        <img src="../assets/icons/search.svg" alt="">
                     </div>
-                    <button onclick="openAddtask()">Add Task <img src="../icons/add.svg" alt=""></button>
+                    <button onclick="openAddtask()">Add Task <img src="../assets/icons/add.svg" alt=""></button>
                 </div>
             </div>
         </div>
@@ -357,7 +357,7 @@ function templateBoard() {
             <div class="todosplit">
                 <div class="tablecolumntitle">
                     <span class="bold-task-title">To do</span>
-                    <img onclick="openAddtask()" src="../icons/plusButton.svg" alt="">
+                    <img onclick="openAddtask()" src="../assets/icons/plusButton.svg" alt="">
                 </div>
                 <div id="todo" class="todoscontainer" ondragover="allowDrop(event); highlight('todo')"
                     ondrop="moveTo('todo')" ondragleave="removeHighlight('todo')">
@@ -366,7 +366,7 @@ function templateBoard() {
             <div class="todosplit">
                 <div class="tablecolumntitle">
                     <span class="bold-task-title">In Progress</span>
-                    <img onclick="openAddtask()" src="../icons/plusButton.svg" alt="">
+                    <img onclick="openAddtask()" src="../assets/icons/plusButton.svg" alt="">
                 </div>
                 <div id="inprogress" class="todoscontainer" ondragover="allowDrop(event); highlight('inprogress')"
                     ondrop="moveTo('inprogress')" ondragleave="removeHighlight('inprogress')"></div>
@@ -374,7 +374,7 @@ function templateBoard() {
             <div class="todosplit">
                 <div class="tablecolumntitle">
                     <span class="bold-task-title">Await Feedback</span>
-                    <img onclick="openAddtask()" src="../icons/plusButton.svg" alt="">
+                    <img onclick="openAddtask()" src="../assets/icons/plusButton.svg" alt="">
                 </div>
                 <div id="awaitfeedback" class="todoscontainer" ondragover="allowDrop(event); highlight('awaitfeedback')"
                     ondrop="moveTo('awaitfeedback')" ondragleave="removeHighlight('awaitfeedback')"></div>
@@ -403,10 +403,10 @@ function templateContacts() {
     <div class="d-flex">
         <div class="contacts-scroll-container">
             <div class="contacts-overview-container">
-                <button class="add-new-contact" onclick="renderAddContact()">Add new contact<img src="../icons/addNewContact.svg"></button>
+                <button class="add-new-contact" onclick="renderAddContact()">Add new contact<img src="../assets/icons/addNewContact.svg"></button>
                 <div id="contacts-overview"></div>
                 </div>
-                <button class="responsiv-contact-button" onclick="renderAddContact()"><img src="../icons/addNewContact.svg" alt=""></button>
+                <button class="responsiv-contact-button" onclick="renderAddContact()"><img src="../assets/icons/addNewContact.svg" alt=""></button>
             </div>
             <div class="contact-single-view" id="contact-single-view">
                 <div class="contacts-headline">
@@ -433,7 +433,7 @@ function templateHelp() {
             <span id="help-page" class="help-page">
               <div class="title-help">Help</div>
               <a href="../html/summary.html"
-                ><img id="return-btn" class="return-btn" src="../icons/arrow-left-line.svg" alt="Exit"
+                ><img id="return-btn" class="return-btn" src="../assets/icons/arrow-left-line.svg" alt="Exit"
               /></a>
               <div class="help-text">
                 Welcome to the help page for <span class="blue-join">Join</span>, your guide to using our kanban project
@@ -543,7 +543,7 @@ function templatePrivacy() {
             <span id="privacy-page" class="virtualClass help-page">
               <div class="title-help">Privacy Policy</div>
               <a href="../html/summary.html"
-                ><img id="return-btn" class="return-btn" src="../icons/arrow-left-line.svg" alt="Exit"
+                ><img id="return-btn" class="return-btn" src="../assets/icons/arrow-left-line.svg" alt="Exit"
               /></a>
               <div class="qa-join">Subtitle</div>
               <div class="help-text">
@@ -573,7 +573,7 @@ function templateLegalNotice() {
             <span id="legal-notice-page" class="virtualClass help-page">
               <div class="title-help">Legal Notice</div>
               <a href="../html/summary.html"
-                ><img id="return-btn" class="return-btn" src="../icons/arrow-left-line.svg" alt="Exit"
+                ><img id="return-btn" class="return-btn" src="../assets/icons/arrow-left-line.svg" alt="Exit"
               /></a>
               <span class="qa-join">Imprint</span>
               <div class="help-text">
@@ -681,6 +681,6 @@ function templateLegalNotice() {
 function loadboard() {
   render(templateBoard());
   sliderScroll();
-  toggleButtonColor('third-bg', 'bord-text', 'bord-img', '../icons/board-white.svg');
+  toggleButtonColor('third-bg', 'bord-text', 'bord-img', '../assets/board-white.svg');
   renderToDos();
 }

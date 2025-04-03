@@ -20,7 +20,7 @@
     <title>Login</title>
   </head>
   <body class="login-body disp-flex" onload="init();initLocalStorage()">
-    <img class="login-logo" src="../icons/logo_blue.svg" alt="Logo" />
+    <img class="login-logo" src="../assets/icons/logo_blue.svg" alt="Logo" />
     <div class="container-login">
       <div class="menu-login">
         <div class="icon-links-login">
@@ -42,7 +42,7 @@
               <div class="inpt-mail-icon-grp ps-rel-mail">
                 <input id="email" class="input-login input-login-1" type="email" placeholder="Email" required />
                 <button type="button" class="icon-btn-login mail-btn-pointer-pos">
-                  <img class="mail-icon-login" src="../icons/mail.svg" alt="Email" />
+                  <img class="mail-icon-login" src="../assets/icons/mail.svg" alt="Email" />
                 </button>
               </div>
               <p id="emailError"></p>
@@ -64,7 +64,7 @@
                   class="icon-btn-login pwd-btn-pos"
                   onclick="showPassword('password') ;toggleVisibleIcon('lock-img-field')"
                 >
-                  <img id="lock-img-field" src="../icons/lock.svg" alt="Password" />
+                  <img id="lock-img-field" src="../assets/icons/lock.svg" alt="Password" />
                 </button>
               </div>
               <p id="passwordError"></p>
@@ -75,9 +75,9 @@
               <!-- <input class="check-box" type="checkbox" /> -->
               <img
                 id="checkbox-login"
-                src="../icons/checkBox.svg"
+                src="../assets/icons/checkBox.svg"
                 alt="Check"
-                onclick="checkButton('checkbox-login','../icons/checkBox.svg','../icons/check-checked.svg')"
+                onclick="checkButton('checkbox-login','../assets/icons/checkBox.svg','../assets/icons/check-checked.svg')"
               />
               <span class="remember ft-sz-400">Remember me</span>
             </div>

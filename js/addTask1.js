@@ -121,10 +121,10 @@ function subtaskIMGS() {
   let plusSubtask = document.getElementById('subtasksCancelIMG');
   let currentIMG = element.getAttribute('src');
   checkNewSubtask();
-  if (currentIMG === '../img/img/subtasksPlus.svg') {
-    element.setAttribute('src', '../img/img/subtasks_check.svg');
+  if (currentIMG === '../assets/icons/subtasksPlus.svg') {
+    element.setAttribute('src', '../assets/icons/subtasks_check.svg');
   } else {
-    element.setAttribute('src', '../img/img/subtasksPlus.svg');
+    element.setAttribute('src', '../assets/icons/subtasksPlus.svg');
     plusSubtask.style.display = 'none';
   }
 }
@@ -137,10 +137,10 @@ function NewSubtaskIMGS() {
   let plusSubtask = document.getElementById('subtasksCancelIMG');
   let currentIMG = element.getAttribute('src');
   checkNewSubtask();
-  if (currentIMG === '../img/img/subtasksPlus.svg') {
-    element.setAttribute('src', '../img/img/subtasks_check.svg');
+  if (currentIMG === '../assets/icons/subtasksPlus.svg') {
+    element.setAttribute('src', '../assets/icons/subtasks_check.svg');
   } else {
-    element.setAttribute('src', '../img/img/subtasksPlus.svg');
+    element.setAttribute('src', '../assets/icons/subtasksPlus.svg');
     plusSubtask.style.display = 'none';
   }
 }
@@ -168,7 +168,7 @@ function changeButton(index) {
 function checkNewSubtask() {
   let element = document.getElementById('subtasksPlusIMG');
   let currentIMG = element.getAttribute('src');
-  if (currentIMG !== '../img/img/subtasks_check.svg') return;
+  if (currentIMG !== '../assets/icons/subtasks_check.svg') return;
   let subtaskField = document.getElementById('subtasksList');
   let singleSubtask = document.getElementById('subtasks');
   if (singleSubtask.value.length === 0) return;
@@ -186,7 +186,7 @@ function checkNewSubtask() {
 function checkNewSubtaskEdit(i) {
   let element = document.getElementById('newSubtaskImgsHover');
   let currentIMG = element.getAttribute('src');
-  if (currentIMG !== '../img/img/subtasks_check.svg') return;
+  if (currentIMG !== '../assets/icons/subtasks_check.svg') return;
   let subtaskField = document.getElementById('subtasksList');
   let singleSubtask = document.getElementById(`input-edit-${i}`);
   if (singleSubtask.value.length === 0) return;
@@ -349,11 +349,11 @@ function showOptions(id, className) {
 function changeCheckState(index) {
   let field = document.getElementById(`checkBox${index}`);
   let currentState = field.getAttribute('src');
-  if (currentState === '../img/img/checkBox.svg') {
-    field.setAttribute('src', '../img/img/Check_button-white.svg');
+  if (currentState === '../assets/icons/checkBox.svg') {
+    field.setAttribute('src', '../assets/icons/Check_button-white.svg');
   }
-  if (currentState === '../img/img/Check_button-white.svg') {
-    field.setAttribute('src', '../img/img/checkBox.svg');
+  if (currentState === '../assets/icons/Check_button-white.svg') {
+    field.setAttribute('src', '../assets/icons/checkBox.svg');
   }
 }
 

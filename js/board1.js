@@ -37,7 +37,7 @@ function forlooprender(test) {
   const container = document.getElementById(test);
   container.innerHTML = '';
   if (todo.length === 0) {
-    container.innerHTML = `<img class="notask" src="../icons/notasktodo.svg" alt="Empty">`;
+    container.innerHTML = `<img class="notask" src="../assets/icons/notasktodo.svg" alt="Empty">`;
   } else {
     returnforlooprender(todo, container);
   }
@@ -68,11 +68,11 @@ function returnforlooprender(todo, container) {
  */
 function renderPrio(prio, id) {
   if (tasks[id]['prio'] == 'low') {
-    document.getElementById(prio).src = '../icons/priolow.svg';
+    document.getElementById(prio).src = '../assets/icons/priolow.svg';
   } else if (tasks[id]['prio'] == 'medium') {
-    document.getElementById(prio).src = '../icons/priomedium.svg';
+    document.getElementById(prio).src = '../assets/icons/priomedium.svg';
   } else {
-    document.getElementById(prio).src = '../icons/priourgent.svg';
+    document.getElementById(prio).src = '../assets/icons/priourgent.svg';
   }
 }
 
@@ -196,7 +196,7 @@ function createSubtasks(i) {
     subtasksContainer.innerHTML += /*html*/ `
         <div class="align-horizontally">
             <img id="checkbox${j}" src="${
-      tasks[i].checkboxStates[j] ? '../icons/checkButton.svg' : '../icons/uncheckBox.svg'
+      tasks[i].checkboxStates[j] ? '../assets/icons/checkButton.svg' : '../assets/icons/uncheckBox.svg'
     }" alt="" onclick="changecheckbox('checkbox${j}' , ${i}, ${j})">
            <span>${element}</span> 
         </div>
@@ -225,11 +225,11 @@ async function changecheckbox(j, i, subtaskIndex) {
  */
 function ifchangecheckbox(i, subtaskIndex, checkbox) {
   if (checkbox.src.includes('uncheckBox.svg')) {
-    checkbox.src = '../icons/checkButton.svg';
+    checkbox.src = '../assets/icons/checkButton.svg';
     tasks[i].checkboxStates[subtaskIndex] = true;
     tasks[i].progress.push(tasks[i].subtasks[subtaskIndex]);
   } else {
-    checkbox.src = '../icons/uncheckBox.svg';
+    checkbox.src = '../assets/icons/uncheckBox.svg';
     tasks[i].checkboxStates[subtaskIndex] = false;
     const subtaskToRemove = tasks[i].subtasks[subtaskIndex];
     const indexToRemove = tasks[i].progress.indexOf(subtaskToRemove);

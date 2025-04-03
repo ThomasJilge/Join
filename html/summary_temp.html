@@ -30,26 +30,26 @@
     <div class="container-summary disp-flex">
       <div class="left-side-section disp-flex">
         <div class="section-1">
-          <img class="logo-summary" src="../icons/logo.svg" alt="Logo" />
+          <img class="logo-summary" src="../assets/icons/logo.svg" alt="Logo" />
         </div>
         <div class="section-2">
-          <div id="first-bg" class="sub-menu-container disp-flex bg-summary" onclick="userAction('summary');toggleButtonColor('first-bg','summary-text','summary-img','../icons/summary_white.svg') ">
-            <img id="summary-img" class="icons-left-side-section cursor-ptr" src="../icons/summary_white.svg" alt="Summary" />
+          <div id="first-bg" class="sub-menu-container disp-flex bg-summary" onclick="userAction('summary');toggleButtonColor('first-bg','summary-text','summary-img','../assets/icons/summary_white.svg') ">
+            <img id="summary-img" class="icons-left-side-section cursor-ptr" src="../assets/icons/summary_white.svg" alt="Summary" />
             <p id="summary-text" class="para-summary gray-text ft-sz-400 clr-white cursor-ptr">Summary</p>
           </div>
 
-          <div id="second-bg" class="sub-menu-container disp-flex" onclick="showRenderSection('add-task-page')"; toggleButtonColor('second-bg','addTask-text','addTask-img','../icons/addTask-white.svg')">
-            <img id="addTask-img" class="icons-left-side-section cursor-ptr" src="../icons/addTask.svg" alt="Task" />
+          <div id="second-bg" class="sub-menu-container disp-flex" onclick="showRenderSection('add-task-page')"; toggleButtonColor('second-bg','addTask-text','addTask-img','../assets//icons/addTask-white.svg')">
+            <img id="addTask-img" class="icons-left-side-section cursor-ptr" src="../assets/icons/addTask.svg" alt="Task" />
             <p id="addTask-text" class="para-summary gray-text ft-sz-400 cursor-ptr">Add Task</p>
           </div>
 
-          <div id="third-bg" class="sub-menu-container disp-flex" onclick="showRenderSection('board-page');toggleButtonColor('third-bg','bord-text','bord-img','../icons/board-white.svg'); renderToDos()">
-            <img id="bord-img" class="icons-left-side-section cursor-ptr" src="../icons/board.svg" alt="Board" />
+          <div id="third-bg" class="sub-menu-container disp-flex" onclick="showRenderSection('board-page');toggleButtonColor('third-bg','bord-text','bord-img','../assets/icons/board-white.svg'); renderToDos()">
+            <img id="bord-img" class="icons-left-side-section cursor-ptr" src="../assets/icons/board.svg" alt="Board" />
             <p id="bord-text" class="para-summary gray-text ft-sz-400 cursor-ptr">Board</p>
           </div>
 
-          <div id="fourth-bg" class="sub-menu-container disp-flex" onclick="showRenderSection('contact-page'); renderContactSection() ; toggleButtonColor('fourth-bg','contact-text','contact-img','../icons/contact-white.svg')">
-            <img id="contact-img" class="icons-left-side-section cursor-ptr" src="../icons/contact.svg" alt="Contacts" />
+          <div id="fourth-bg" class="sub-menu-container disp-flex" onclick="showRenderSection('contact-page'); renderContactSection() ; toggleButtonColor('fourth-bg','contact-text','contact-img','../assets/icons/contact-white.svg')">
+            <img id="contact-img" class="icons-left-side-section cursor-ptr" src="../assets/icons/contact.svg" alt="Contacts" />
             <p id="contact-text" class="para-summary gray-text ft-sz-400 cursor-ptr">Contacts</p>
           </div>
         </div>
@@ -60,11 +60,10 @@
       </div>
       <div class="right-side-section">
         <header class="menu disp-flex">
-          <img class="mobile-logo" src="../icons/logo_blue.svg" alt="Logo" />
+          <img class="mobile-logo" src="../assets/icons/logo_blue.svg" alt="Logo" />
           <div class="kanban-tool ft-sz-400">Kanban Project Management Tool</div>
           <div class="menu-icons-group disp-flex">
-            <img id="help-icon" class="help" src="../icons/help.svg" alt="Help" onclick="showRenderSection('help-render')" />
-            <!-- <img id="help-icon" class="help" src="../icons/help.svg" alt="Help" onclick="userAction('help')" /> -->
+            <img id="help-icon" class="help" src="../assets/icons/help.svg" alt="Help" onclick="showRenderSection('help-render')" />
             <button id="loginBtn" class="login" onclick="showSubmenu()"></button>
           </div>
         </header>
@@ -91,14 +90,14 @@
                 </div>
                 <div class="first-line-task disp-flex">
                   <div class="todo do-task disp-flex">
-                    <img class="task-icons-blue" src="../icons/edit.svg" alt="TO-DO" />
+                    <img class="task-icons-blue" src="../assets/icons/edit.svg" alt="TO-DO" />
                     <div class="middle">
                       <span id="todo" class="var-task">0</span>
                       <span class="task-text ft-sz-400">To-do</span>
                     </div>
                   </div>
                   <div class="done do-task disp-flex">
-                    <img class="task-icons-blue" src="../icons/check.svg" alt="TO-DO" />
+                    <img class="task-icons-blue" src="../assets/icons/check.svg" alt="TO-DO" />
                     <div class="middle">
                       <span id="done" class="var-task">0</span>
                       <span class="task-text ft-sz-400">Done</span>
@@ -107,7 +106,7 @@
                 </div>
                 <div class="second-line-task disp-flex">
                   <div class="urgent disp-flex task-due-common">
-                    <img class="task-icons" src="../icons/urgent.svg" alt="Urgent" />
+                    <img class="task-icons" src="..//icons/urgent.svg" alt="Urgent" />
                     <div class="middle">
                       <span id="urgent" class="var-task">0</span>
                       <span class="task-text ft-sz-400">Urgent</span>
@@ -175,9 +174,6 @@
                                 </div>
                                 <div class="assignedAddTask addTaskOverview">
                                     <span class="containerLeftSpan">Assigned to</span>
-                                    <!-- <select id="select"></select> -->
-                                    <!-- <input id="select" type="text">
-                                    <img onclick="addContacts()" class="dropDownImg" src="../img/img/arrow_drop_down.svg" alt=""> -->
                                     <div id="dropdown" class="dropdown" onclick="handleDropdownClick(this)">Select contacts to assign</div>
                                         <div id="options" class="options d-none"></div>
                                         <div id="btn-grp" class="btn"></div>
@@ -198,9 +194,9 @@
                                 <div class="addTaskOverview">
                                     <span class="containerLeftSpan">Prio</span>
                                     <div id="prio" class="prioSelection">
-                                        <img id="colorUrgentImg" onclick="prio('Urgent');changeColorPrio('colorUrgentImg','colorLowImg', 'colorMediumImg','../img/img/urgent.svg', '../img/img/urgent-white.svg','../img/img/low.svg','../img/img/medium.svg')" class="prio prioUrgentIMG testPrio" src="../img/img/urgent.svg" alt="">
-                                        <img id="colorMediumImg" onclick="prio('Medium');changeColorPrio('colorMediumImg','colorUrgentImg','colorLowImg', '../img/img/medium-yellow.svg', '../img/img/medium.svg','../img/img/urgent.svg','../img/img/low.svg')" class="prio prioMediumIMG testPrio" src="../img/img/medium-yellow.svg" alt="">
-                                        <img id="colorLowImg" onclick="prio('Low');changeColorPrio('colorLowImg','colorMediumImg','colorUrgentImg', '../img/img/low.svg', '../img/img/low-green.svg','../img/img/medium.svg','../img/img/urgent.svg')" class="prio prioLowIMG testPrio" src="../img/img/low.svg" alt="">
+                                        <img id="colorUrgentImg" onclick="prio('Urgent');changeColorPrio('colorUrgentImg','colorLowImg', 'colorMediumImg','../assets/icons/urgent.svg', '../assets/icons/urgent-white.svg','../assets/icons/low.svg','assets/icons/medium.svg')" class="prio prioUrgentIMG testPrio" src="../assets/icons/urgent.svg" alt="">
+                                        <img id="colorMediumImg" onclick="prio('Medium');changeColorPrio('colorMediumImg','colorUrgentImg','colorLowImg', '../assets/icons/medium-yellow.svg', '../assets/icons/medium.svg','../assets/icons/urgent.svg','assets/icons/low.svg')" class="prio prioMediumIMG testPrio" src="../assets/icons/medium-yellow.svg" alt="">
+                                        <img id="colorLowImg" onclick="prio('Low');changeColorPrio('colorLowImg','colorMediumImg','colorUrgentImg', '../assets/icons/low.svg', '../assets/icons/low-green.svg','../assets/icons/medium.svg','assets/icons/urgent.svg')" class="prio prioLowIMG testPrio" src="../assets/icons/low.svg" alt="">
                                     </div>
                                 </div>
                                 <div class="categoryAddTask addTaskOverview">
@@ -208,14 +204,11 @@
                                         <span class="star">*</span>
                                     </span>    
                                     <select onclick="changeBorderColor(this)" id="selectCategory">
-                                        <!-- <input type="text" id="selectCategory">
-                                        <img class="dropDownImg" src="../img/img/arrow_drop_down.svg" alt=""> -->
                                     </select>
                                 </div> 
                                 <div class="subtasksAddTask addTaskOverview">
                                     <span class="spanSubtasks">Subtasks</span>
                                     <input onclick="changeBorderColor(this)" id="subtasks" class="inputAddTask" type="text" placeholder="Add new subtask">
-                                    <!-- <img onclick="addNewSubtask()" class="subtasksPlusIMG" src="../img/img/subtasksPlus.svg" alt=""> -->
                                 </div> 
                             </div>
                         </div>
@@ -233,7 +226,7 @@
                                             </div>
                                         <button id="createTaskButton" class="createTaskButton">
                                             <span>Create Task</span>
-                                            <img class="imgCheck" src="../img/img/check.svg" alt="">
+                                            <img class="imgCheck" src="assets/icons/check.svg" alt="">
                                         </button>
                                     </div>
                                 </div>
@@ -250,23 +243,23 @@
                       <div class="addandsearch">
                           <div class="searchtask">
                               <input id="taskInput" type="" placeholder="Find Task" oninput="filterTodosByTitle()">
-                              <img src="/icons/search.svg" alt="">
+                              <img src="../assets/icons/search.svg" alt="">
                           </div>
-                          <button onclick="openAddtask()">Add Task <img src="/icons/add.svg" alt=""></button>
+                          <button onclick="openAddtask()">Add Task <img src="../assets/icons/add.svg" alt=""></button>
                       </div>
                   </div>
                   <div class="tablecolumn">
                       <div class="tablecolumntitle">
                           <span>To do</span>
-                          <img src="/icons/plusButton.svg" alt="">
+                          <img src="../assets/icons/plusButton.svg" alt="">
                       </div>
                       <div class="tablecolumntitle">
                           <span>In Progress</span>
-                          <img src="/icons/plusButton.svg" alt="">
+                          <img src="../assets/icons/plusButton.svg" alt="">
                       </div>
                       <div class="tablecolumntitle">
                           <span>Await Feedback</span>
-                          <img src="/icons/plusButton.svg" alt="">
+                          <img src="../assets/icons/plusButton.svg" alt="">
                       </div>
                       <div class="tablecolumntitle">
                           <span>Done</span>
@@ -304,10 +297,10 @@
             <div class="d-flex">
               <div class="contacts-scroll-container">
                   <div class="contacts-overview-container">
-                      <button class="add-new-contact" onclick="renderAddContact()">Add new contact<img src="../icons/addNewContact.svg"></button>
+                      <button class="add-new-contact" onclick="renderAddContact()">Add new contact<img src="../assets/icons/addNewContact.svg"></button>
                       <div id="contacts-overview"></div>
                       </div>
-                      <button class="responsiv-contact-button" onclick="renderAddContact()"><img src="../icons/addNewContact.svg" alt=""></button>
+                      <button class="responsiv-contact-button" onclick="renderAddContact()"><img src="../assets/icons/addNewContact.svg" alt=""></button>
                   </div>
                   <div class="contact-single-view" id="contact-single-view">
                       <div class="contacts-headline">
@@ -323,7 +316,7 @@
             <span id="privacy-page" class="virtualClass help-page">
               <div class="title-help">Privacy Policy</div>
               <a href="../html/summary.html"
-                ><img id="return-btn" class="return-btn" src="../icons/arrow-left-line.svg" alt="Exit"
+                ><img id="return-btn" class="return-btn" src="../assets/icons/arrow-left-line.svg" alt="Exit"
               /></a>
               <div class="qa-join">Subtitle</div>
               <div class="help-text">
@@ -343,7 +336,7 @@
             <span id="legal-notice-page" class="virtualClass help-page">
               <div class="title-help">Legal Notice</div>
               <a href="../html/summary.html"
-                ><img id="return-btn" class="return-btn" src="../icons/arrow-left-line.svg" alt="Exit"
+                ><img id="return-btn" class="return-btn" src="../assets/icons/arrow-left-line.svg" alt="Exit"
               /></a>
               <span class="qa-join">Imprint</span>
               <div class="help-text">
@@ -446,7 +439,7 @@
             <span id="help-page" class="help-page">
               <div class="title-help">Help</div>
               <a href="../html/summary.html"
-                ><img id="return-btn" class="return-btn" src="../icons/arrow-left-line.svg" alt="Exit"
+                ><img id="return-btn" class="return-btn" src="..//icons/arrow-left-line.svg" alt="Exit"
               /></a>
               <div class="help-text">
                 Welcome to the help page for <span class="blue-join">Join</span>, your guide to using our kanban project
