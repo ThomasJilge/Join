@@ -2,7 +2,6 @@
 let users = [];
 let currentUser = [];
 let ischecked = false;
-
 /**
  * Initialize local storage with current user from login page
  * this will be then used in summary page to display the first letters of the name
