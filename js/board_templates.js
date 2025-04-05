@@ -110,9 +110,9 @@ function templateOpenaddtask() {
                           <div class="addTaskOverview">
                               <span class="containerLeftSpan">Prio</span>
                               <div id="prio" class="prioSelection">
-                                  <img id="colorUrgentImg" onclick="prio('urgent'); changeColorPrio('colorUrgentImg','colorLowImg', 'colorMediumImg','../assets/icons/urgent.svg', '../assets/icons/urgent-white.svg','../assets/icons/low.svg','../assets/icons/medium.svg')" class="prio prioUrgentIMG testPrio" src="../assets/icons/urgent.svg" alt="">
-                                  <img id="colorMediumImg" onclick="prio('medium'); changeColorPrio('colorMediumImg','colorUrgentImg','colorLowImg', '../assets/icons/medium-yellow.svg', '../assets/icons/medium.svg','../assets/icons/urgent.svg','../assets/icons/low.svg')" class="prio prioMediumIMG testPrio" src="../assets/icons/medium-yellow.svg" alt="">
-                                  <img id="colorLowImg" onclick="prio('low'); changeColorPrio('colorLowImg','colorMediumImg','colorUrgentImg', '../assets/icons/low.svg', '../assets/icons/low-green.svg','../assets/icons/medium.svg','../assets/icons/urgent.svg')" class="prio prioLowIMG testPrio" src="../assets/icons/low.svg" alt="">
+                                  <img id="colorUrgentImg" onclick="prio('urgent'); changeColorPrio('colorUrgentImg','colorLowImg', 'colorMediumImg','../assets/icons/urgent1.svg', '../assets/icons/urgent-white.svg','../assets/icons/low.svg','../assets/icons/medium.svg')" class="prio prioUrgentIMG testPrio" src="../assets/icons/urgent1.svg" alt="">
+                                <img id="colorMediumImg" onclick="prio('medium'); changeColorPrio('colorMediumImg','colorUrgentImg','colorLowImg', '../assets/icons/medium-yellow.svg', '../assets/icons/medium.svg','../assets/icons/urgent1.svg','../assets/icons/low.svg')" class="prio prioMediumIMG testPrio" src="../assets/icons/medium-yellow.svg" alt="">
+                                <img id="colorLowImg" onclick="prio('low'); changeColorPrio('colorLowImg','colorMediumImg','colorUrgentImg', '../assets/icons/low.svg', '../assets/icons/low-green.svg','../assets/icons/medium.svg','../assets/icons/urgent1.svg')" class="prio prioLowIMG testPrio" src="../assets/icons/low.svg" alt="">
                               </div>
                           </div>
                           <div class="categoryAddTask addTaskOverview">
@@ -208,9 +208,9 @@ function edittasktemplate(i) {
                           <div class="addTaskOverview">
                               <span class="containerLeftSpan">Prio</span>
                               <div id="prio" class="prioSelection">
-                                  <img id="colorUrgentImg" onclick="prio('urgent'); changeColorPrio('colorUrgentImg','colorLowImg', 'colorMediumImg','../assets/icons/urgent.svg', '../assets/icons/urgent-white.svg','../assets/icons/low.svg','../assets/icons/medium.svg')" class="prio prioUrgentIMG testPrio" src="../assets/icons/urgent.svg" alt="">
-                                  <img id="colorMediumImg" onclick="prio('medium'); changeColorPrio('colorMediumImg','colorUrgentImg','colorLowImg', '../assets/icons/medium-yellow.svg', '../assets/icons/medium.svg','../assets/icons/urgent.svg','../assets/icons/low.svg')" class="prio prioMediumIMG testPrio" src="../assets/icons/medium-yellow.svg" alt="">
-                                  <img id="colorLowImg" onclick="prio('low'); changeColorPrio('colorLowImg','colorMediumImg','colorUrgentImg', '../assets/icons/low.svg', '../assets/icons/low-green.svg','../assets/icons/medium.svg','../assets/icons/urgent.svg')" class="prio prioLowIMG testPrio" src="../assets/icons/low.svg" alt="">
+                                  <img id="colorUrgentImg" onclick="prio('urgent'); changeColorPrio('colorUrgentImg','colorLowImg', 'colorMediumImg','../assets/icons/urgent1.svg', '../assets/icons/urgent-white.svg','../assets/icons/low.svg','../assets/icons/medium.svg')" class="prio prioUrgentIMG testPrio" src="../assets/icons/urgent1.svg" alt="">
+                                  <img id="colorMediumImg" onclick="prio('medium'); changeColorPrio('colorMediumImg','colorUrgentImg','colorLowImg', '../assets/icons/medium-yellow.svg', '../assets/icons/medium.svg','../assets/icons/urgent1.svg','../assets/icons/low.svg')" class="prio prioMediumIMG testPrio" src="../assets/icons/medium-yellow.svg" alt="">
+                                  <img id="colorLowImg" onclick="prio('low'); changeColorPrio('colorLowImg','colorMediumImg','colorUrgentImg', '../assets/icons/low.svg', '../assets/icons/low-green.svg','../assets/icons/medium.svg','../assets/icons/urgent1.svg')" class="prio prioLowIMG testPrio" src="../assets/icons/low.svg" alt="">
                               </div>
                           </div>
                           <div class="categoryAddTask addTaskOverview">

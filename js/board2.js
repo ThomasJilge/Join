@@ -130,13 +130,13 @@ async function edittask(i) {
   */
   function checkprio(i) {
     if (tasks[i].prio.includes('urgent')) {
-      changeColorPrio('colorUrgentImg', 'colorLowImg', 'colorMediumImg', '../assets/icons/urgent.svg', '../assets/icons/urgent.svg', '../assets/icons/low.svg', '../assets/icons/medium.svg')
+      changeColorPrio('colorUrgentImg', 'colorLowImg', 'colorMediumImg', '../assets/icons/urgent1.svg', '../assets/icons/urgent-white.svg', '../assets/icons/low.svg', '../assets/icons/medium.svg')
     }
     if (tasks[i].prio.includes('medium')) {
-      changeColorPrio('colorMediumImg', 'colorUrgentImg', 'colorLowImg', '../assets/icons/medium-yellow.svg', '../assets/icons/medium.svg', '../assets/icons/urgent.svg', '../assets/icons/low.svg')
+      changeColorPrio('colorMediumImg', 'colorUrgentImg', 'colorLowImg', '../assets/icons/medium-yellow.svg', '../assets/icons/medium.svg', '../assets/icons/urgent1.svg', '../assets/icons/low.svg')
     }
     if (tasks[i].prio.includes('low')) {
-      changeColorPrio('colorLowImg', 'colorMediumImg', 'colorUrgentImg', '../assets/icons/low.svg', '../assets/icons/low-green.svg', '../assets/icons/medium.svg', '../assets/icons/urgent.svg')
+      changeColorPrio('colorLowImg', 'colorMediumImg', 'colorUrgentImg', '../assets/icons/low.svg', '../assets/icons/low-green.svg', '../assets/icons/medium.svg', '../assets/icons/urgent1.svg')
     }
   }
   
